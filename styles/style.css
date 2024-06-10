@@ -204,7 +204,7 @@ a :visited {
 }
 @media screen and (max-width: 768px) {
     .About{
-        height: 150vh ;
+        height: 110vh ;
     }
 }
 /****************************************** About End ***************************************/
@@ -254,7 +254,7 @@ a :visited {
         display: block;
     }
     .Education {
-        height: 150vh;
+        height: 110vh;
     }
 }
 /****************************************** Education End ***************************************/
@@ -310,7 +310,7 @@ a :visited {
         display: block;
     }
     .Projects {
-        height: 230vh;
+        height: 170vh;
     }
     .ProjectCardBlock{
         display: block;
@@ -338,7 +338,7 @@ a :visited {
 }
 @media screen and (max-width: 768px) {
     .Experience{
-        height: 150vh;
+        height: 110vh;
     }
 }
 /****************************************** Experience End ***************************************/
@@ -407,7 +407,7 @@ a :visited {
 @media screen and (max-width: 768px) {
     
     .contentCertifications {
-        height: 320vh;
+        height: 230vh;
     }
     .CertiBlock{
         display: block;
@@ -440,6 +440,9 @@ a :visited {
 @media screen and (max-width: 768px) {
     .textBox {
         width: 90%;
+    }
+    .ContactMe{
+        height: 130vh;
     }
 }
 /****************************************** Contact Me End ***************************************/
