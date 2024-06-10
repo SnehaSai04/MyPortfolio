@@ -20,13 +20,29 @@ a {
 a :visited {
     color: inherit;
 }
-
+@media screen and (max-width: 768px) {
+    body {
+     width: 100%;
+     margin-top: 160px;
+    }
+}
 /****************************************** Menu ***************************************/
 
 #Pic {
     border-radius: 75px;
     border: 2px solid #f2e9e4;
     margin-left: 110px;
+    height: 150px;
+    width: 150px;
+}
+#Pic2 {
+    display: none;
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-left: 30px;
+    margin-top: -130px;
+    border-radius: 40px;
 }
 .Menu {
     position: fixed;
@@ -76,14 +92,41 @@ a :visited {
     background-color: #6c757d;
     border-radius: 10px;
 }
-
+#MenuIcon{
+    display: none;
+    float: right;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-top: -120px;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    #MenuIcon{
+        display: none;
+    }
+    .Menu{
+        display: none;
+    }
+    .MenuItems {
+        display: none;
+        margin-top: 100px;
+    }
+    #Pic2 {
+        display: block;
+    }
+}
 /****************************************** Menu End ***************************************/
 
 .Container {
     margin-left: 35%;
     display: block;
 }
-
+@media screen and (max-width: 768px) {
+    .Container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
 /****************************************** Home ***************************************/
 
 .Home {
@@ -119,7 +162,7 @@ a :visited {
 }
 .KnowMore {
     height:fit-content;
-    width: 130px;
+    width: 140px;
     border-radius: 10px;
     border: 1px solid  #f2e9e4;
     text-align: center;
@@ -137,6 +180,11 @@ a :visited {
       transform: translateY(-10px);
     }
   }
+@media screen and (max-width: 768px) {
+    .KnowMore{
+        font-size: 12px;
+    }
+}
 
 /****************************************** Home End ***************************************/
 
@@ -154,7 +202,11 @@ a :visited {
     background-color: transparent;
     padding-top: 30px;
 }
-
+@media screen and (max-width: 768px) {
+    .About{
+        height: 150vh ;
+    }
+}
 /****************************************** About End ***************************************/
 
 /****************************************** Education ***************************************/
@@ -197,6 +249,14 @@ a :visited {
     margin-left: 100px;
     margin-top: -5px;
 }
+@media screen and (max-width: 768px) {
+    .clgDetails{
+        display: block;
+    }
+    .Education {
+        height: 150vh;
+    }
+}
 /****************************************** Education End ***************************************/
 
 /****************************************** Projects ***************************************/
@@ -218,11 +278,14 @@ a :visited {
     width: fit-content;
     background-color: #343a40;
     padding: 0px;
-    
     margin-right: 70px;
     border-radius: 20px;
     position: relative;
     transition: background-color 0.3s ease;
+}
+.ProjectCardBlock{
+    display: flex;
+    margin-top: 20px;
 }
 .ProjectCard:hover {
     opacity: 0.3;
@@ -242,7 +305,21 @@ a :visited {
 .ProjectCard:hover .link-icon {
     color:  white;
 }
-
+@media screen and (max-width: 768px) {
+    .clgDetails{
+        display: block;
+    }
+    .Projects {
+        height: 230vh;
+    }
+    .ProjectCardBlock{
+        display: block;
+    }
+    .ProjectCard {
+        padding-bottom: 4px;
+        margin-top: 15px;
+    }
+}
 /****************************************** Projects End ***************************************/
 
 /****************************************** Experience ***************************************/
@@ -259,7 +336,11 @@ a :visited {
     background-color: transparent;
     padding-top: 30px;
 }
-
+@media screen and (max-width: 768px) {
+    .Experience{
+        height: 150vh;
+    }
+}
 /****************************************** Experience End ***************************************/
 
 /******************************************Certifications****************************************/
@@ -293,7 +374,9 @@ a :visited {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
-
+.CertiBlockInner{
+    display: flex;
+}
 .cert-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(252, 251, 251, 0.087);
@@ -314,13 +397,22 @@ a :visited {
 .cert-title {
     font-weight: bold;
     color: white;
+    font-family: inherit;
     
 }
 
 .cert-desc {
     color: white;
 }
-
+@media screen and (max-width: 768px) {
+    
+    .contentCertifications {
+        height: 320vh;
+    }
+    .CertiBlock{
+        display: block;
+    }
+}
 /*******************************************Certifications End***********************************/
 
 /****************************************** Contact Me End ***************************************/
@@ -337,5 +429,17 @@ a :visited {
     background-color: transparent;
     padding-top: 30px;
 }
-
+.textBox{
+    width: 50%;
+    height: 40px; 
+    padding: 2px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+@media screen and (max-width: 768px) {
+    .textBox {
+        width: 90%;
+    }
+}
 /****************************************** Contact Me End ***************************************/
