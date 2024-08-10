@@ -25,13 +25,16 @@ const texts = ['Web Developer','Front End Developer', 'JavaScript Enthusiast', '
         }());
 
 
-  // Initialize EmailJS
-  (function(){
-    emailjs.init("nyI4b-ZUqpCkWQa32"); 
+// Initialize EmailJS
+(function() {
+    emailjs.init("KWcpCEf09iwYbsGbc"); 
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
+
+    // Show loading indicator
+    alert('Sending your message, please wait...');
 
     // Get the form data
     const formData = new FormData(this);
@@ -41,12 +44,18 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         message: formData.get('message')
     };
 
+    // Reset the form immediately
+    document.getElementById("contact-form").reset();
+
     // Send the email using EmailJS
-    emailjs.send('service_oetv07j', 'template_fb2fugf', data) 
+    emailjs.send('service_oetv07j', 'template_fb2fugf', data)
         .then((response) => {
-            alert('The Email including your name, EmailId, and the mesasge is sent to Sneha Sai Chilukuri. ');
+            // Display success message quickly after form reset
+            alert('The Email including your name, EmailId, and the message is sent to Sneha Sai Chilukuri.');
         })
         .catch((error) => {
+            // Display error message if email sending fails
             alert('Failed to send email. Error: ' + JSON.stringify(error));
         });
 });
+
